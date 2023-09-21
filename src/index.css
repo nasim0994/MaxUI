@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #202020;
+  color: #3d3d3d;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
 
 .bg-primary-g {
   background: linear-gradient(to left, #4338ca, #4f46e5);
-  color: #fff;
+  color: #fff !important;
   border-radius: 6px;
   transition: all 0.5s ease;
 }
@@ -58,6 +58,21 @@ h1 {
   z-index: -1;
 }
 /* --------------Home page css -------------*/
+
+.menu {
+  gap: 24px;
+
+  font-size: 15px;
+}
+.menu li a {
+  color: #606060;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #4338ca;
+}
+
 .hero_wrap {
   background-image: url("/images/hero/hero_bg.png");
   background-position: center;
@@ -66,8 +81,11 @@ h1 {
   height: 90vh;
   width: 100%;
   position: relative;
+}
 
+.hero_content {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
