@@ -1,6 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+}
+
+h1 {
+  font-family: "Mooli", sans-serif;
+}
 
 .container {
   max-width: 90% !important;
@@ -11,4 +22,52 @@
   .container {
     max-width: 1200px !important;
   }
+}
+
+.bg-primary-g {
+  background: linear-gradient(to left, #4338ca, #4f46e5);
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+
+.bg-primary-g:hover {
+  background: linear-gradient(to right, #4338ca, #4f46e5);
+}
+
+.text-primary-after::after {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #4e46e592;
+  border-radius: 10px;
+  z-index: -1;
+}
+.text-secondary-after::after {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: #ffa60096;
+  border-radius: 10px;
+  z-index: -1;
+}
+/* --------------Home page css -------------*/
+.hero_wrap {
+  background-image: url("/images/hero/hero_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
