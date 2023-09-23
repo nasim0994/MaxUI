@@ -17,7 +17,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section className="lg:px-20 py-5">
+    <section className="lg:px-20 py-10">
       <div className="container lg:flex gap-28">
         <div className="lg:w-3/5">
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-20">
