@@ -145,7 +145,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   align-items: center;
 }
 
-/* ------------------------ */
+/* ---------Payment section--------------- */
 
 .payment_img {
   position: absolute;
@@ -193,4 +193,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
   }
+}
+
+/* -------------card hover ----------------*/
+.component_card img {
+  transition: all 0.3s;
+}
+
+.component_card img:hover {
+  transform: perspective(999px) rotateX(7deg) translate3d(0, -4px, 5px);
 }
