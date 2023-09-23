@@ -1,53 +1,39 @@
 import { Link } from "react-router-dom";
-import navigation2 from "/images/components/component.jpg";
-import navigation3 from "/images/components/component1.jpg";
-import navigation4 from "/images/components/component2.jpg";
+import navigation2 from "/images/pages/page1.jpg";
+import navigation3 from "/images/pages/page2.jpg";
+import navigation4 from "/images/pages/page3.jpg";
 
 export default function PageList() {
   return (
     <section>
-      <div className="bg-gradient-to-r from-[#141727] to-[#3a416f] p-6 rounded-xl mt-32 m-4">
-        <div className="w-[90%] xl:w-[1180px] mx-auto text-base-100">
-          <div className="lg:flex gap-28 items-center">
+      <div className="pages_wrap my-20">
+        <div className="container">
+          <div className="lg:flex gap-28 items-center h-[500px]">
             <div className="lg:w-1/3">
-              <h2 className="primary-text-gradient text-4xl font-bold pb-2">
-                Full Pages
-              </h2>
-              <h3 className="text-3xl font-semibold">
-                Ready to use your <br /> website
-              </h3>
+              <h1 className="text-4xl font-bold pb-2">
+                Full Pages Ready to use your website
+              </h1>
 
-              <p className="py-8">
+              <p className="py-7">
                 We created many examples for pages like Signup, Signin, Forgot
                 Password, 2FA Authentification and so on. Just choose between a
                 Basic Design, an illustration or a cover and you are good to go!
               </p>
 
               <Link to="docs/pages">
-                <button className="text-xs font-bold px-6 py-2.5 rounded-lg primary-bg-gradient uppercase scale-button">
-                  More pages
-                </button>
+                <button className="px-6 py-2.5 bg-primary-g">More pages</button>
               </Link>
             </div>
-            <div className="lg:w-2/3 mt-6 lg:mt-0">
-              <div className="grid sm:grid-cols-3 gap-6 component_card lg:mt-[-60px]">
-                <div className="hidden sm:flex flex-col gap-4">
-                  <div>
-                    <Link to="">
-                      <img
-                        src={navigation2}
-                        alt=""
-                        className="bg-base-100 rounded-xl h-32 w-full"
-                      />
-                    </Link>
-                  </div>
 
+            <div className="lg:w-2/3 mt-6 lg:mt-0 rotate-[345deg]">
+              <div className="grid sm:grid-cols-3 gap-5 component_card">
+                <div className="hidden sm:flex flex-col gap-4">
                   <div>
                     <Link to="">
                       <img
                         src={navigation3}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
@@ -57,7 +43,7 @@ export default function PageList() {
                       <img
                         src={navigation4}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
@@ -69,7 +55,7 @@ export default function PageList() {
                       <img
                         src={navigation2}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
@@ -79,7 +65,7 @@ export default function PageList() {
                       <img
                         src={navigation3}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
@@ -89,29 +75,19 @@ export default function PageList() {
                       <img
                         src={navigation4}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
-                      />
-                    </Link>
-                  </div>
-
-                  <div>
-                    <Link to="">
-                      <img
-                        src={navigation4}
-                        alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-3">
                   <div>
                     <Link to="">
                       <img
                         src={navigation2}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
@@ -121,7 +97,7 @@ export default function PageList() {
                       <img
                         src={navigation3}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>
@@ -129,9 +105,9 @@ export default function PageList() {
                   <div>
                     <Link to="">
                       <img
-                        src={navigation4}
+                        src={navigation3}
                         alt=""
-                        className="bg-base-100 rounded-xl  h-32 w-full"
+                        className="bg-base-100 rounded-xl h-[350px] w-full"
                       />
                     </Link>
                   </div>

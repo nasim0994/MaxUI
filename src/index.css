@@ -203,3 +203,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .component_card img:hover {
   transform: perspective(999px) rotateX(7deg) translate3d(0, -4px, 5px);
 }
+
+.pages_wrap {
+  background-image: linear-gradient(0deg, #b3b3b354, #b3b3b354),
+    url(/images/pages/pages_bg.jpg);
+  background-size: contain;
+  padding: 24px;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
