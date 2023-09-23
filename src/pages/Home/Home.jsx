@@ -1,3 +1,4 @@
+import Benefits from "../../components/HomeComponents/Benefits/Benefits";
 import ComponentList from "../../components/HomeComponents/ComponentList/ComponentList";
 import Hero from "../../components/HomeComponents/Hero/Hero";
 import PageList from "../../components/HomeComponents/PageList/PageList";
@@ -12,6 +13,7 @@ export default function Home() {
       <PaymentGateways />
       <ComponentList />
       <PageList />
+      <Benefits />
     </>
   );
 }
