@@ -1,11 +1,11 @@
 import Hero from "../../components/HomeComponents/Hero/Hero";
-import TopSlider from "../../components/HomeComponents/TopSlider/TopSlider";
+import Services from "../../components/HomeComponents/Services/Services";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <TopSlider />
+      <Services />
     </>
   );
 }

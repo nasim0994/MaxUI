@@ -5,7 +5,7 @@ export default {
       colors: {
         primary: "#4f46e5",
         secondary: "#4338ca",
-        accent: "#F5F7FA",
+        accent: "#F000B8",
         neutral: "#3d3d3d",
         "neutral-content": "#606060",
         "neutral-focus": "#000",
