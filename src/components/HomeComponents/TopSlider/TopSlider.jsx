@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function TopSlider() {
   return (
-    <section className="pb-20 -mt-40">
+    <section className="pb-10 -mt-40">
       <div className="w-[90%] md:w-[700px] mx-auto">
         <Swiper
           effect={"coverflow"}
@@ -20,8 +20,12 @@ export default function TopSlider() {
             depth: 100,
             modifier: 3,
           }}
+          autoplay={{
+            delay: 8000,
+            disableOnInteraction: false,
+          }}
           pagination={{ clickable: true }}
-          modules={[EffectCoverflow, Pagination]}
+          modules={[Autoplay, EffectCoverflow, Pagination]}
           className="HomeTopSlider"
         >
           <SwiperSlide>
