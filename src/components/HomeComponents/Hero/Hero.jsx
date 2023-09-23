@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="hero_content">
         <div className="container">
           <div className="grid grid-cols-2">
-            <div className="relative z-40">
+            <div className="relative z-40 -mt-28">
               <h1 className="text-5xl font-bold  leading-[55px]">
                 We have created{" "}
                 <span className="text-primary-after relative">incredible</span>{" "}
@@ -18,7 +18,7 @@ export default function Hero() {
 
               <div className="mt-6 ">
                 <button className="bg-primary-g px-4 py-2 rounded">
-                  View Products
+                  Get Started
                 </button>
               </div>
             </div>
