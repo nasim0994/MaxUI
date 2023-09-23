@@ -2,22 +2,22 @@ import { Link } from "react-router-dom";
 
 export default function PaymentGateways() {
   return (
-    <section className="py-10">
+    <section className="py-10 ">
       <div className="container">
-        <div className="grid grid-cols-5 items-center">
-          <div className="col-span-3">
-            <div className="w-[550px] h-[550px]">
+        <div className="grid grid-cols-2 items-center">
+          <div>
+            <div className="w-[450px] h-[450px]">
               <div className="relative border rounded-full w-full h-full border-primary/30 flex justify-center items-center">
                 <div>
-                  <div className="payment_img payment_y_animation top-[10%] left-9 w-20 h-20">
+                  <div className="payment_img payment_y_animation top-[12%] left-2 w-20 h-20">
                     <img src="/images/payment/payment5.png" alt="" />
                   </div>
 
-                  <div className="payment_img payment_y_animation  bottom-14 left-8 w-20 h-20">
+                  <div className="payment_img payment_y_animation bottom-6 left-8 w-20 h-20">
                     <img src="/images/payment/payment6.png" alt="" />
                   </div>
 
-                  <div className="payment_img payment_y_animation -top-5 right-20 w-28 h-28">
+                  <div className="payment_img payment_y_animation -top-5 right-20 w-24 h-24">
                     <img src="/images/payment/payment8.png" alt="" />
                   </div>
 
@@ -61,39 +61,53 @@ export default function PaymentGateways() {
             </div>
           </div>
 
-          <div className="col-span-2">
+          <div>
             <div>
-              <div className="bg-gray-300 rounded p-2 relative">
-                <img
-                  src="/images/payment/payment0.png"
-                  alt=""
-                  className="w-[122px] absolute -top-4 -left-8"
-                />
+              <div className="w-max">
+                <div className="bg-gray-300 rounded p-2 relative">
+                  <img
+                    src="/images/payment/payment0.png"
+                    alt=""
+                    className="w-[122px] absolute -top-4 -left-8"
+                  />
 
-                <div className="flex gap-2 ml-24">
-                  <img src="/images/payment/Visa.png" alt="" className="w-12" />
-                  <img
-                    src="/images/payment/Mastercard.png"
-                    alt=""
-                    className="w-12"
-                  />
-                  <img src="/images/payment/JCB.png" alt="" className="w-12" />
-                  <img src="/images/payment/Amex.png" alt="" className="w-12" />
-                  <img
-                    src="/images/payment/Discover.png"
-                    alt=""
-                    className="w-12"
-                  />
-                  <img
-                    src="/images/payment/wu.jpg"
-                    alt=""
-                    className="w-12 rounded"
-                  />
+                  <div className="flex gap-2 ml-24">
+                    <img
+                      src="/images/payment/Visa.png"
+                      alt=""
+                      className="w-12"
+                    />
+                    <img
+                      src="/images/payment/Mastercard.png"
+                      alt=""
+                      className="w-12"
+                    />
+                    <img
+                      src="/images/payment/JCB.png"
+                      alt=""
+                      className="w-12"
+                    />
+                    <img
+                      src="/images/payment/Amex.png"
+                      alt=""
+                      className="w-12"
+                    />
+                    <img
+                      src="/images/payment/Discover.png"
+                      alt=""
+                      className="w-12"
+                    />
+                    <img
+                      src="/images/payment/wu.jpg"
+                      alt=""
+                      className="w-12 rounded"
+                    />
+                  </div>
                 </div>
+                <h1 className="text-end text-primary text-xs">
+                  * Almost every card supports entire the world
+                </h1>
               </div>
-              <h1 className="text-end text-primary text-xs">
-                * Almost every card supports entire the world
-              </h1>
             </div>
 
             <div className="mt-10">
