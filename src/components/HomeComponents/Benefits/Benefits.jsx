@@ -9,7 +9,7 @@ export default function Benefits() {
       <div className="container">
         <div className="md:flex gap-10 items-center">
           <div className="md:w-1/3 text-center mb-6 md:mb-0">
-            <h2 className="text-neutral font-bold text-2xl md:text-3xl">
+            <h2 className="text-neutral dark:text-base-100 font-bold text-2xl md:text-3xl">
               What is the benefit <br /> of using MaxUI?
             </h2>
           </div>
@@ -17,10 +17,10 @@ export default function Benefits() {
             <div className="flex gap-4">
               <img src={responsive} alt="" className="w-14 h-14" />
               <div>
-                <h2 className="text-neutral text-lg font-semibold">
+                <h2 className="text-neutral dark:text-base-100 text-lg font-semibold">
                   Responsive Design
                 </h2>
-                <p className="text-sm text-neutral-content">
+                <p className="text-sm text-neutral-content dark:text-gray-400 ">
                   Build fully responsive user interfaces that adapt to any
                   screen size using responsive modifiers.
                 </p>
@@ -30,10 +30,10 @@ export default function Benefits() {
             <div className="flex gap-4">
               <img src={dark} alt="" className="w-14 h-14" />
               <div>
-                <h2 className="text-neutral text-lg font-semibold">
+                <h2 className="text-neutral dark:text-base-100 text-lg font-semibold">
                   Dark Mode
                 </h2>
-                <p className="text-sm text-neutral-content">
+                <p className="text-sm text-neutral-content dark:text-gray-400 ">
                   Optimize your site for dark mode directly in your HTML using
                   the dark mode modifier.
                 </p>
@@ -43,10 +43,10 @@ export default function Benefits() {
             <div className="flex gap-4">
               <img src={customizable} alt="" className="w-14 h-14" />
               <div>
-                <h2 className="text-neutral text-lg font-semibold">
+                <h2 className="text-neutral dark:text-base-100 text-lg font-semibold">
                   Customizable
                 </h2>
-                <p className="text-sm text-neutral-content">
+                <p className="text-sm text-neutral-content dark:text-gray-400 ">
                   Customize the framework to match your website with your own
                   custom styles.
                 </p>
@@ -56,10 +56,10 @@ export default function Benefits() {
             <div className="flex gap-4">
               <img src={combo} alt="" className="w-14 h-14" />
               <div>
-                <h2 className="text-neutral text-lg font-semibold">
+                <h2 className="text-neutral dark:text-base-100 text-lg font-semibold">
                   Combo pack
                 </h2>
-                <p className="text-sm text-neutral-content">
+                <p className="text-sm text-neutral-content dark:text-gray-400 ">
                   Get customized components from different libraries in one
                   place.
                 </p>

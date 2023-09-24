@@ -67,7 +67,7 @@ export default function ClientSlider() {
               <FaStar />
             </div>
 
-            <p className="mt-4 text-neutral-content text-[15px]">
+            <p className="mt-4 text-neutral-content dark:text-gray-400  text-[15px]">
               "Your company is truly upstanding and is behind its product 100%.
               It's the perfect solution for our business. It has really helped
               our business. We're loving it. This is simply unbelievable! I like
@@ -85,7 +85,7 @@ export default function ClientSlider() {
 
                   <div>
                     <h2>Nasim Uddin</h2>
-                    <p className="text-sm text-neutral-content">
+                    <p className="text-sm text-neutral-content dark:text-gray-400 ">
                       Front-End Developer
                     </p>
                   </div>

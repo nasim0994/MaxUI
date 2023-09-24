@@ -42,7 +42,7 @@ export default function Header() {
               <li>
                 <button
                   onClick={handelThemeToggle}
-                  className="text-xl mt-px hover:text-primary dark:hover:text-primary text-neutral-content dark:text-gray-200"
+                  className="text-xl mt-px hover:text-primary dark:hover:text-primary text-neutral-content dark:text-gray-400  dark:text-gray-200"
                 >
                   <BiSun />
                 </button>
@@ -58,7 +58,7 @@ export default function Header() {
               <li>
                 <button
                   onClick={handelThemeToggle}
-                  className="text-xl mt-px hover:text-primary text-neutral-content"
+                  className="text-xl mt-px hover:text-primary text-neutral-content dark:text-gray-400 "
                 >
                   <BiSun />
                 </button>

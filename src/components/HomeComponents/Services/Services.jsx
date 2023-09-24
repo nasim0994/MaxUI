@@ -23,10 +23,10 @@ export default function Services() {
           <div className="grid sm:grid-cols-2 gap-6 lg:gap-20">
             <div>
               <FaBook className="text-primary text-2xl" />
-              <h2 className="text-neutral text-xl font-bold my-3">
+              <h2 className="text-neutral dark:text-base-100 text-xl font-bold my-3">
                 Full Documentation
               </h2>
-              <p className="text-neutral-content">
+              <p className="text-neutral-content dark:text-gray-400 ">
                 Built by developers for developers. Check the foundation and you
                 will find everything inside our documentation.
               </p>
@@ -34,10 +34,10 @@ export default function Services() {
 
             <div>
               <SiTailwindcss className="text-primary text-3xl" />
-              <h2 className="text-neutral text-xl font-bold my-3">
+              <h2 className="text-neutral dark:text-base-100 text-xl font-bold my-3">
                 Tailwind CSS Class
               </h2>
-              <p className="text-neutral-content">
+              <p className="text-neutral-content dark:text-gray-400 ">
                 The world’s most popular front-end open source toolkit,
                 featuring Sass variables and mixins.
               </p>
@@ -47,8 +47,10 @@ export default function Services() {
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-20 mt-6 sm:mt-14">
             <div>
               <BiTimer className="text-primary text-3xl" />
-              <h2 className="text-neutral text-xl font-bold my-3">Save Time</h2>
-              <p className="text-neutral-content">
+              <h2 className="text-neutral dark:text-base-100 text-xl font-bold my-3">
+                Save Time
+              </h2>
+              <p className="text-neutral-content dark:text-gray-400 ">
                 Creating your design from scratch with dedicated designers can
                 be very expensive. Start with our Design System.
               </p>
@@ -56,10 +58,10 @@ export default function Services() {
 
             <div>
               <MdOutlineMobileFriendly className="text-primary text-3xl" />
-              <h2 className="text-neutral text-xl font-bold my-3">
+              <h2 className="text-neutral dark:text-base-100 text-xl font-bold my-3">
                 Tailwind CSS Class
               </h2>
-              <p className="text-neutral-content">
+              <p className="text-neutral-content dark:text-gray-400 ">
                 The world’s most popular front-end open source toolkit,
                 featuring Sass variables and mixins.
               </p>

@@ -113,7 +113,7 @@ export default function PaymentGateways() {
                 30+ International Payment Gateways Support
               </h1>
 
-              <p className="mt-6 text-sm text-neutral-content">
+              <p className="mt-6 text-sm text-neutral-content dark:text-gray-400 ">
                 Manage your eCommerce self managed or multi vendor with huge
                 features like amazon, daraz, rich vendor or merchant feature,
                 central product management system with lots of cool features
