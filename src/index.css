@@ -10,6 +10,11 @@ body {
   background: #fbfdff;
 }
 
+html.dark body {
+  color: #fff;
+  background: #060e32;
+}
+
 h1 {
   font-family: "Mooli", sans-serif;
 }
