@@ -3,10 +3,29 @@ import { BiSun } from "react-icons/bi";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 import MobileMenu from "./MobileMenu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [themeToggle, setThemeToggle] = useState(
+    JSON.parse(localStorage.getItem("MaxUI-theme")) || false
+  );
+
+  const haldleThemeToggle = () => {
+    setThemeToggle(!themeToggle);
+  };
+
+  useEffect(() => {
+    if (themeToggle) {
+      localStorage.setItem("MaxUI-theme", true);
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+    } else {
+      localStorage.setItem("MaxUI-theme", false);
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+    }
+  }, [themeToggle]);
 
   return (
     <header className="py-2">
@@ -38,7 +57,10 @@ export default function Header() {
                 <Link to="">Blogs</Link>
               </li>
               <li>
-                <button className="text-xl mt-px hover:text-primary text-neutral-content">
+                <button
+                  onClick={haldleThemeToggle}
+                  className="text-xl mt-px hover:text-primary dark:hover:text-primary text-neutral-content dark:text-gray-200"
+                >
                   <BiSun />
                 </button>
               </li>

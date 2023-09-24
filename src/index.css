@@ -75,8 +75,13 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+html.dark .menu li a:hover {
   color: #4338ca;
+}
+
+html.dark .menu li a {
+  color: #ddd;
 }
 
 .hero_wrap {
@@ -86,6 +91,11 @@ h1 {
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
+}
+
+html.dark .hero_wrap {
+  background-image: url("/images/hero/hero_bg_dark.avif");
+  color: #fff;
 }
 
 .hero_content {
