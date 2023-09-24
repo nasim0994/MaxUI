@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import { BiSun } from "react-icons/bi";
 import { HiMenuAlt3 } from "react-icons/hi";
 
+import MobileMenu from "./MobileMenu";
+import { useState } from "react";
+
 export default function Header() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <header className="py-2">
       <div className="container">
@@ -51,12 +56,14 @@ export default function Header() {
                 </button>
               </li>
               <li>
-                <button>
+                <button onClick={() => setMobileMenu(!mobileMenu)}>
                   <HiMenuAlt3 className="text-2xl" />
                 </button>
               </li>
             </ul>
           </nav>
+
+          <MobileMenu setMobileMenu={setMobileMenu} mobileMenu={mobileMenu} />
         </div>
       </div>
     </header>
