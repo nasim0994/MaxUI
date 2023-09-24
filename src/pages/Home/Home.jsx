@@ -1,4 +1,6 @@
 import Benefits from "../../components/HomeComponents/Benefits/Benefits";
+// import ClientSlider from "../../components/HomeComponents/ClientSlider/ClientSlider";
+import Collection from "../../components/HomeComponents/Collection/Collection";
 import ComponentList from "../../components/HomeComponents/ComponentList/ComponentList";
 import Hero from "../../components/HomeComponents/Hero/Hero";
 import PageList from "../../components/HomeComponents/PageList/PageList";
@@ -15,7 +17,9 @@ export default function Home() {
       <PaymentGateways />
       <ComponentList />
       <PageList />
+      {/* <ClientSlider /> */}
       <Benefits />
+      <Collection />
     </>
   );
 }
