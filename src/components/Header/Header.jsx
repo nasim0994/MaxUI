@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { BiSun } from "react-icons/bi";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 export default function Header() {
   return (
@@ -14,7 +16,7 @@ export default function Header() {
           </Link>
 
           <nav>
-            <ul className="flex  menu">
+            <ul className="menu hidden md:flex gap-6 text-[15px]">
               <li>
                 <Link to="">Home</Link>
               </li>
@@ -31,9 +33,27 @@ export default function Header() {
                 <Link to="">Blogs</Link>
               </li>
               <li>
+                <button className="text-xl mt-px hover:text-primary text-neutral-content">
+                  <BiSun />
+                </button>
+              </li>
+              <li>
                 <Link to="" className="bg-primary-g px-3 py-2.5 text-sm">
                   Login/Signup
                 </Link>
+              </li>
+            </ul>
+
+            <ul className="gap-4 text-[15px] menu flex md:hidden">
+              <li>
+                <button className="text-xl mt-px hover:text-primary text-neutral-content">
+                  <BiSun />
+                </button>
+              </li>
+              <li>
+                <button>
+                  <HiMenuAlt3 className="text-2xl" />
+                </button>
               </li>
             </ul>
           </nav>

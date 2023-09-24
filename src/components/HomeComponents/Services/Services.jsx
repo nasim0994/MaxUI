@@ -18,9 +18,9 @@ export default function Services() {
 
   return (
     <section className="lg:px-20 py-10">
-      <div className="container lg:flex gap-28">
+      <div className="container md:flex md:gap-6 xl:gap-28">
         <div className="lg:w-3/5">
-          <div className="grid sm:grid-cols-2 gap-6 sm:gap-20">
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-20">
             <div>
               <FaBook className="text-primary text-2xl" />
               <h2 className="text-neutral text-xl font-bold my-3">
@@ -68,7 +68,7 @@ export default function Services() {
         </div>
 
         <div className="lg:w-2/5 mt-6 lg:mt-0">
-          <div className="service-card text-base-100 text-center p-16">
+          <div className="service-card sm:w-96 md:w-80 lg:w-96 text-base-100 text-center p-16">
             <span className="text-4xl">
               <FaCode />
             </span>

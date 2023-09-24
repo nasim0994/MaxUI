@@ -6,7 +6,7 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 export default function TopSlider() {
   return (
-    <section className="pb-10 -mt-40">
+    <section className="pb-10 lg:-mt-40">
       <div className="w-[90%] md:w-[700px] mx-auto">
         <Swiper
           effect={"coverflow"}

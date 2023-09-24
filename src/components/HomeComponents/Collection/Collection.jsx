@@ -1,9 +1,9 @@
 export default function Collection() {
   return (
-    <section className="pt-40 pb-14">
+    <section className="pt-20 sm:pt-40 pb-14">
       <div className="container">
         <div className="bg-primary rounded p-4 relative">
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center w-2/3">
             <img
               src="/images/collection/collection.png"
               alt=""
@@ -22,7 +22,7 @@ export default function Collection() {
             <img
               src="/images/collection/man.png"
               alt=""
-              className="absolute bottom-0 right-4 w-40"
+              className="absolute bottom-0 -right-4 md:right-4 w-40"
             />
           </div>
         </div>
