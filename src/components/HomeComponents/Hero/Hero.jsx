@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { UseContext } from "../../../ContextApi/ContextApi";
 import Header from "../../Header/Header";
 
@@ -20,9 +21,12 @@ export default function Hero() {
               </h1>
 
               <div className="mt-3 sm:mt-6">
-                <button className="bg-primary-g px-4 py-2 rounded">
+                <Link
+                  to="/docs/getting-started/documentation"
+                  className="bg-primary-g px-4 py-2 rounded"
+                >
                   Get Started
-                </button>
+                </Link>
               </div>
             </div>
 

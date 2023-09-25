@@ -23,10 +23,7 @@ export default function MobileMenu({ mobileMenu, setMobileMenu }) {
         </div>
         <ul className="h-full flex flex-col gap-2 pt-0 p-6 text-[17px]">
           <li>
-            <Link to="">Home</Link>
-          </li>
-          <li>
-            <Link to="">Products</Link>
+            <Link to="/docs/getting-started/documentation">Docs</Link>
           </li>
           <li>
             <Link to="">Components</Link>
