@@ -2,13 +2,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BiSun } from "react-icons/bi";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { MdDarkMode } from "react-icons/md";
 
 import MobileMenu from "./MobileMenu";
 import { UseContext } from "../../ContextApi/ContextApi";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const { handelThemeToggle } = UseContext();
+  const { handelThemeToggle, themeToggle } = UseContext();
 
   return (
     <header className="py-2">
@@ -25,26 +26,23 @@ export default function Header() {
           <nav>
             <ul className="menu hidden md:flex gap-6 text-[15px]">
               <li>
-                <Link to="">Home</Link>
+                <Link to="/docs/getting-started/documentation">Docs</Link>
               </li>
               <li>
-                <Link to="">Products</Link>
+                <Link to="/components">Components</Link>
               </li>
               <li>
-                <Link to="">Components</Link>
+                <Link to="/pages">Pages</Link>
               </li>
               <li>
-                <Link to="">Pages</Link>
-              </li>
-              <li>
-                <Link to="">Blogs</Link>
+                <Link to="/blog">Blogs</Link>
               </li>
               <li>
                 <button
                   onClick={handelThemeToggle}
-                  className="text-xl mt-px hover:text-primary dark:hover:text-primary text-neutral-content dark:text-gray-400  dark:text-gray-200"
+                  className="text-xl mt-px hover:text-primary dark:hover:text-primary text-neutral-content dark:text-gray-400"
                 >
-                  <BiSun />
+                  {themeToggle ? <MdDarkMode /> : <BiSun />}
                 </button>
               </li>
               <li>
