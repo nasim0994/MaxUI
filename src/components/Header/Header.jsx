@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BiSun } from "react-icons/bi";
-import { HiMenuAlt3 } from "react-icons/hi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { MdDarkMode } from "react-icons/md";
 
 import MobileMenu from "./MobileMenu";
@@ -63,7 +63,7 @@ export default function Header() {
               </li>
               <li>
                 <button onClick={() => setMobileMenu(!mobileMenu)}>
-                  <HiMenuAlt3 className="text-2xl" />
+                  <RxHamburgerMenu className="text-xl" />
                 </button>
               </li>
             </ul>

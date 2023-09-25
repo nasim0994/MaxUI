@@ -10,6 +10,26 @@
   overflow-y: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .docs_wrap .sidebar {
+    left: -100%;
+    background: #fff;
+    z-index: 99;
+    padding: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar_show {
+    left: 0% !important;
+  }
+
+  .docs_wrap .content {
+    width: 100% !important;
+    left: 0 !important;
+    padding: 20px 0px !important;
+  }
+}
+
 .sidebar::-webkit-scrollbar {
   width: 2px;
 }
@@ -18,15 +38,17 @@
   background: #6060601d;
 }
 
-.docs_wrap .content {
-  width: calc(100% - 300px);
-  position: relative;
-  left: 300px;
-  padding: 20px;
+@media only screen and (min-width: 1024px) {
+  .docs_wrap .content {
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 20px;
+  }
 }
 
 .content_content {
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 .sidebar_menu {
@@ -46,6 +68,7 @@
   transition: all 0.3s ease;
   text-transform: capitalize;
   font-size: 15px;
+  position: relative;
 }
 
 .sidebar_menu li a::before {
@@ -53,7 +76,7 @@
   position: absolute;
   width: 15px;
   border: 1px dashed #ddd;
-  left: 0;
+  left: -15px;
 }
 
 .sidebar_menu li a:hover::before {

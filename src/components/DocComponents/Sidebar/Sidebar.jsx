@@ -6,9 +6,9 @@ import { GrCode } from "react-icons/gr";
 import { HiOutlineColorSwatch } from "react-icons/hi";
 import { AiOutlineBgColors } from "react-icons/ai";
 
-export default function Sidebar() {
+export default function Sidebar({ sidebar, setSidebar }) {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar && "sidebar_show"}`}>
       <div className="flex gap-2">
         <div className="relative">
           <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xl opacity-40">
@@ -28,7 +28,10 @@ export default function Sidebar() {
         <h1 className="text-neutral">Getting Started</h1>
         <ul className="sidebar_menu">
           <li>
-            <NavLink to="/docs/getting-started/documentation">
+            <NavLink
+              onClick={() => setSidebar(false)}
+              to="/docs/getting-started/documentation"
+            >
               <span className="icon">
                 <BsBookHalf />
               </span>
@@ -37,7 +40,7 @@ export default function Sidebar() {
           </li>
 
           <li>
-            <NavLink to="/docs/installation">
+            <NavLink onClick={() => setSidebar(false)} to="/docs/installation">
               <span className="icon">
                 <RiInstallLine />
               </span>
@@ -46,7 +49,7 @@ export default function Sidebar() {
           </li>
 
           <li>
-            <NavLink to="/docs/use">
+            <NavLink onClick={() => setSidebar(false)} to="/docs/use">
               <span className="icon">
                 <GrCode />
               </span>
@@ -55,7 +58,7 @@ export default function Sidebar() {
           </li>
 
           <li>
-            <NavLink to="/docs/installation">
+            <NavLink onClick={() => setSidebar(false)} to="/docs/installation">
               <span className="icon">
                 <HiOutlineColorSwatch />
               </span>
@@ -64,7 +67,7 @@ export default function Sidebar() {
           </li>
 
           <li>
-            <NavLink to="/docs/installation">
+            <NavLink onClick={() => setSidebar(false)} to="/docs/installation">
               <span className="icon">
                 <AiOutlineBgColors />
               </span>

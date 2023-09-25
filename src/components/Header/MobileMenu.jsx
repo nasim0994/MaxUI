@@ -6,7 +6,7 @@ export default function MobileMenu({ mobileMenu, setMobileMenu }) {
     <>
       <button
         onClick={() => setMobileMenu(false)}
-        className={` fixed top-0 left-0 w-full h-screen bg-[#00000065] z-[9999] ${
+        className={`fixed top-0 left-0 w-full h-screen bg-[#00000065] z-[99999] ${
           mobileMenu ? "block" : "hidden"
         }`}
       ></button>
